@@ -107,7 +107,7 @@ public class AnnuaireImpl implements AnnuaireInterface {
 	}
 
 	@Override
-	public List<Departement> getDepartement() {
+	public List<Departement> getDepartements() {
 		List<Departement> listDepartement=new ArrayList();
 		try {
 			PreparedStatement ps=connection.prepareStatement(SELECTDEPARTEMENTS);

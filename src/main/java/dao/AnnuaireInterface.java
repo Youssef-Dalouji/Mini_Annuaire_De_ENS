@@ -14,7 +14,7 @@ public interface AnnuaireInterface {
 	
 	public boolean addDepartement(Departement d);
 	
-	public List<Departement> getDepartement();
+	public List<Departement> getDepartements();
 	
 	public Departement searchDepartement(String key);
 	
