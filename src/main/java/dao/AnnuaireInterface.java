@@ -2,28 +2,26 @@ package dao;
 
 import java.util.List;
 
-import entities.Departement;
-import entities.Etudiant;
-import entities.Filiere;
+import entities.*;
 
 public interface AnnuaireInterface {
 	
-	public Etudiant addEtudiant();
+	public boolean addEtudiant(Etudiant e);
 	
 	public List<Etudiant> getEtudiants();
 	
-	public Etudiant searchEtudiant();
+	public List<Etudiant> searchEtudiant(String key);
 	
-	public Departement addDepartement();
+	public boolean addDepartement(Departement d);
 	
 	public List<Departement> getDepartement();
 	
-	public Departement searchDepartement();
+	public Departement searchDepartement(String key);
 	
-	public Filiere addFiliere();
+	public boolean addFiliere(Filiere f);
 	
 	public List<Filiere> getFilieres();
 	
-	public Filiere searchFiliere();
+	public Filiere searchFiliere(String key);
 	
 }
