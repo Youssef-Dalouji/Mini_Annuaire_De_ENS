@@ -1,0 +1,1 @@
+<p>&copy; <%= new java.util.Date().getYear() + 1900 %> ENS Annuaire. Tous droits réservés.</p>
