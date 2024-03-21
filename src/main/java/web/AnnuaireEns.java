@@ -34,7 +34,7 @@ public class AnnuaireEns extends HttpServlet {
 			request.getRequestDispatcher("/WEB-INF/View/etudiant.jsp").forward(request, response);
 			return;
 	    }
-		if (path.equals("/SearchEtudiant") && request.getMethod().equals("GET")) {
+		if (path.equals("/SearchEtudiant.html") && request.getMethod().equals("GET")) {
 			request.getRequestDispatcher("/WEB-INF/View/searchEtudiant.jsp").forward(request, response);
 			return;
 	    }

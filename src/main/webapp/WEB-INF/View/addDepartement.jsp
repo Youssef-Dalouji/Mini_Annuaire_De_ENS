@@ -7,7 +7,7 @@
 <title>ENS Annuaire</title>
 <link rel="icon" type="image/x-icon" href="images/ENS3.png">
 <link rel="stylesheet" href="css/bootstrap.min.css">
-<script defer src="script/script.js"></script>
+<script defer src="script/scriptaddDepart.js"></script>
 </head>
 <body>
 	<div class="principale d-flex flex-column justify-content-between">
@@ -18,7 +18,7 @@
     <div class="body container my-4">
         <div class="row justify-content-center">
             <div class="col-lg-6">
-                <form id="productForm" action="viewProduct.php" method="post">
+                <form id="departForm" action="viewProduct.php" method="post">
 				    <fieldset>
 				        <legend>Insertion département</legend>
 				        <div class="mb-3">

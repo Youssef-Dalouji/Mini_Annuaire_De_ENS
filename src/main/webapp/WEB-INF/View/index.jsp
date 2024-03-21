@@ -16,6 +16,7 @@
     
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/ENS3.png">
 
     <title>ENS Annuaire</title>
   </head>
@@ -54,16 +55,16 @@
               <nav class="site-navigation text-right ml-auto d-none d-lg-none" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav ml-auto ">
                   <li >Menu utilisation </li>
-                  <li><a href="about.html" class="nav-link" style="font-size: 1.2rem;">Liste étudiants</a></li>
-                  <li><a href="services.html" class="nav-link" style="font-size: 1.2rem;">Recherche étudiant</a></li>
-                  <li><a href="blog.html" class="nav-link" style="font-size: 1.2rem;">Liste départements</a></li>
-                  <li><a href="contact.html" class="nav-link" style="font-size: 1.2rem;">Recherche département</a></li>
-                  <li><a href="contact.html" class="nav-link" style="font-size: 1.2rem;">Liste filières</a></li>
-                  <li><a href="contact.html" class="nav-link" style="font-size: 1.2rem;">Recherche filières</a></li>
+                  <li><a href="Etudiants.html" class="nav-link" style="font-size: 1.2rem;">Liste étudiants</a></li>
+                  <li><a href="SearchEtudiant.html" class="nav-link" style="font-size: 1.2rem;">Recherche étudiant</a></li>
+                  <li><a href="Departements.html" class="nav-link" style="font-size: 1.2rem;">Liste départements</a></li>
+                  <li><a href="SearchDepart.html" class="nav-link" style="font-size: 1.2rem;">Recherche département</a></li>
+                  <li><a href="Filieres.html" class="nav-link" style="font-size: 1.2rem;">Liste filières</a></li>
+                  <li><a href="SearchFiliere.html" class="nav-link" style="font-size: 1.2rem;">Recherche filières</a></li>
                   <li >Menu administration </li>
-                  <li><a href="about.html" class="nav-link" style="font-size: 1.2rem;"> Insertion étudiant</a></li>
-                  <li><a href="services.html" class="nav-link" style="font-size: 1.2rem;">Insertion département</a></li>
-                  <li><a href="blog.html" class="nav-link" style="font-size: 1.2rem;">Insertion filière</a></li>
+                  <li><a href="InsertEtudiant.html" class="nav-link" style="font-size: 1.2rem;"> Insertion étudiant</a></li>
+                  <li><a href="InsertDepart.html" class="nav-link" style="font-size: 1.2rem;">Insertion département</a></li>
+                  <li><a href="InsertFiliere.html" class="nav-link" style="font-size: 1.2rem;">Insertion filière</a></li>
                 </ul>
               </nav>
             </div>

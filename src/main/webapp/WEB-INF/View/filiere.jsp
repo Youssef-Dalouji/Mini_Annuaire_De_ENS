@@ -18,8 +18,9 @@
 		<div class="body container my-4">
 			<div class="row justify-content-center">
 				<div class="col-lg-8">
-					<table class="table caption-bottom">
-					<caption>Liste des filières</caption>
+					<a class="btn btn-success" href="InsertFiliere.html" role="button">Insérer</a>
+					<table class="table caption-bottom my-2">
+						<caption>Liste des filières</caption>
 						<thead class="table-dark">
 							<tr>
 								<th>ID</th>
@@ -27,7 +28,7 @@
 							</tr>
 						</thead>
 						<tbody>
-						<%-- <c:forEach items="${model.getTable() }" var="message">
+							<%-- <c:forEach items="${model.getTable() }" var="message">
 							<tr>
 								<td>${message.getId() }</td>
 								<td>${message.getDesignation() }</td>

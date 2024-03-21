@@ -18,7 +18,8 @@
 		<div class="body container my-4">
 			<div class="row justify-content-center">
 				<div class="col-lg-8">
-					<table class="table caption-top">
+				<a class="btn btn-success" href="InsertEtudiant.html" role="button">Insérer</a>
+					<table class="table caption-top my-2">
 					<caption>Liste des étudiants</caption>
 						<thead class="table-dark">
 							<tr>
