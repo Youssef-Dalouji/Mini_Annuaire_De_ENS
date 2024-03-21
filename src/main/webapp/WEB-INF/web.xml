@@ -3,7 +3,7 @@
   <display-name>Mini_Annuaire_De_ENS</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index_98365546545x.jsp</welcome-file>
     <welcome-file>index.htm</welcome-file>
     <welcome-file>default.html</welcome-file>
     <welcome-file>default.jsp</welcome-file>
@@ -11,32 +11,12 @@
   </welcome-file-list>
   <servlet>
     <description></description>
-    <display-name>DepartementServlet</display-name>
-    <servlet-name>DepartementServlet</servlet-name>
-    <servlet-class>web.DepartementServlet</servlet-class>
+    <display-name>AnnuaireEns</display-name>
+    <servlet-name>AnnuaireEns</servlet-name>
+    <servlet-class>web.AnnuaireEns</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>DepartementServlet</servlet-name>
-    <url-pattern>/DepartementServlet</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>EtudiantServlet</display-name>
-    <servlet-name>EtudiantServlet</servlet-name>
-    <servlet-class>web.EtudiantServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>EtudiantServlet</servlet-name>
-    <url-pattern>/EtudiantServlet</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>FiliereServlet</display-name>
-    <servlet-name>FiliereServlet</servlet-name>
-    <servlet-class>web.FiliereServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>FiliereServlet</servlet-name>
-    <url-pattern>/FiliereServlet</url-pattern>
+    <servlet-name>AnnuaireEns</servlet-name>
+    <url-pattern>*.html</url-pattern>
   </servlet-mapping>
 </web-app>

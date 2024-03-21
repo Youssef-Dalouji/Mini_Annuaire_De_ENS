@@ -6,7 +6,7 @@
 
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" aria-current="page" style="color:white;" href="addProduct.php">Home</a>
+        <a class="nav-link" aria-current="page" style="color:white;" href="/Mini_Annuaire_De_ENS/">Home</a>
       </li>
     </ul>
   </div>
