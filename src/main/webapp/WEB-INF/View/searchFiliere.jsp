@@ -20,10 +20,9 @@
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-lg-8">
-					<a class="btn btn-dark my-4" href="Filieres.html" role="button">Liste des filières</a>
 					<form name="search" id="filiereForm" action="" method="post">
-						<div class="input-group my-2">
-								<input type="search" id="nom" name="nom" class="form-control"
+						<div class="input-group mt-5">
+								<input type="search" value="${model.getKey() }" maxlength="30" id="nom" name="nom" class="form-control"
 									placeholder="Chercher de filière">
 								<div class="input-group-append">
 									<button type="submit" class="btn btn-primary"
@@ -38,19 +37,22 @@
 						</div>
 						</form>
 						<div>
-							<table class="table mt-5">
-								<tbody>
-									<tr>
-										<th scope="row">1</th>
-										<td>Mark</td>
-										<td>Otto</td>
-										<td>@mdo</td>
-										<td>Mark</td>
-										<td>Otto</td>
-										<td>@mdo</td>
-									</tr>
-								</tbody>
-							</table>
+							<c:if test="${model.getFiliere().getId() != 0 && not empty model.getFiliere().getNom()}">
+								<table class="table table-dark table-hover mt-5">
+									<thead>
+										<tr class="text-center">
+											<th scope="col">ID</th>
+											<th scope="col">Nom</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="text-center">
+											<th scope="row">${model.getFiliere().getId() }</th>
+											<td>${model.getFiliere().getNom() }</td>
+										</tr>
+									</tbody>
+								</table>
+							</c:if>
 						</div>
 					</div>
 				</div>

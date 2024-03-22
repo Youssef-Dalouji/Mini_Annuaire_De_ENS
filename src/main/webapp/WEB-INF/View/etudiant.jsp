@@ -19,6 +19,7 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-8">
 				<a class="btn btn-success" href="InsertEtudiant.html" role="button">Insérer</a>
+				<a class="btn btn-light ml-3" href="SearchEtudiant.html" role="button">Chercher</a>
 					<table class="table caption-top my-2">
 					<caption>Liste des étudiants</caption>
 						<thead class="table-dark">
@@ -33,14 +34,17 @@
 							</tr>
 						</thead>
 						<tbody>
-						<%-- <c:forEach items="${model.getTable() }" var="message">
-							<tr>
+						<c:forEach items="${model.getListEtudiant()}" var="message">
+							<tr class="text-center">
 								<td>${message.getId() }</td>
-								<td>${message.getDesignation() }</td>
-								<td>${message.getPrix() }</td>
-								<td>${message.getQuantite() }</td>
+								<td>${message.getCne()}</td>
+								<td>${message.getNom()}</td>
+								<td>${message.getPrenom()}</td>
+								<td>${message.getDepartement()}</td>
+								<td>${message.getFiliere()}</td>
+								<td>${message.getTelephone()}</td>
 							</tr>
-						</c:forEach> --%>
+						</c:forEach>
 						</tbody>
 					</table>
 				</div>

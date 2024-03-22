@@ -20,37 +20,40 @@
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-lg-8">
-					<a class="btn btn-dark my-4" href="Departements.html" role="button">Liste des départements</a>
 						<form name="search" id="departForm" action="" method="post">
-						<div class="input-group my-2">
-								<input type="search" id="nom" name="nom" class="form-control"
-									placeholder="Chercher de departement">
+							<div class="input-group mt-5">
+								<input type="search" maxlength="30" value="${model.getKey() }" id="nom" name="nom"
+									class="form-control" placeholder="Chercher de departement">
 								<div class="input-group-append">
 									<button type="submit" class="btn btn-primary"
 										data-toggle="collapse" data-target="#searchCollapse"
 										aria-expanded="false" aria-controls="searchCollapse">
 										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
 											fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                    					<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    					<path
+												d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
                   					</svg>
 									</button>
 								</div>
-						</div>
+							</div>
 						</form>
 						<div>
-							<table class="table mt-5">
-								<tbody>
-									<tr>
-										<th scope="row">1</th>
-										<td>Mark</td>
-										<td>Otto</td>
-										<td>@mdo</td>
-										<td>Mark</td>
-										<td>Otto</td>
-										<td>@mdo</td>
-									</tr>
-								</tbody>
-							</table>
+							<c:if test="${model.getDepartement().getId() != 0 && not empty model.getDepartement().getNom()}">
+								<table class="table table-dark table-hover mt-5">
+								<thead>
+										<tr class="text-center">
+											<th scope="col">ID</th>
+											<th scope="col">Nom</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="text-center">
+											<th scope="row">${model.getDepartement().getId() }</th>
+											<td>${model.getDepartement().getNom() }</td>
+										</tr>
+									</tbody>
+								</table>
+							</c:if>
 						</div>
 					</div>
 				</div>

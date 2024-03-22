@@ -19,6 +19,8 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-8">
 					<a class="btn btn-success" href="InsertFiliere.html" role="button">Insérer</a>
+					<a class="btn btn-light ml-3" href="SearchFiliere.html"
+						role="button">Chercher</a>
 					<table class="table caption-bottom my-2">
 						<caption>Liste des filières</caption>
 						<thead class="table-dark">
@@ -28,14 +30,12 @@
 							</tr>
 						</thead>
 						<tbody>
-							<%-- <c:forEach items="${model.getTable() }" var="message">
-							<tr>
-								<td>${message.getId() }</td>
-								<td>${message.getDesignation() }</td>
-								<td>${message.getPrix() }</td>
-								<td>${message.getQuantite() }</td>
-							</tr>
-						</c:forEach> --%>
+							<c:forEach items="${model.getListFiliere()}" var="message">
+								<tr class="text-center">
+									<td>${message.getId() }</td>
+									<td>${message.getNom()}</td>
+								</tr>
+							</c:forEach>
 						</tbody>
 					</table>
 				</div>

@@ -20,10 +20,10 @@
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-lg-8">
-					<a class="btn btn-dark my-4" href="Etudiants.html" role="button">Liste des étudiants</a>
 						<form name="search" id="etudiantForm" action="" method="post">
-						<div class="input-group my-2">
-								<input type="search" id="nom" name="nom" class="form-control"
+							<div class="input-group mt-5">
+								<input type="search" value="${model.getKey() }" maxlength="30"
+									id="nom" name="nom" class="form-control"
 									placeholder="Chercher de Etudiant [Nom Complet]">
 								<div class="input-group-append">
 									<button type="submit" class="btn btn-primary"
@@ -31,26 +31,42 @@
 										aria-expanded="false" aria-controls="searchCollapse">
 										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
 											fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                    					<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    					<path
+												d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
                   					</svg>
 									</button>
 								</div>
-						</div>
+							</div>
 						</form>
 						<div>
-							<table class="table mt-5">
-								<tbody>
-									<tr>
-										<th scope="row">1</th>
-										<td>Mark</td>
-										<td>Otto</td>
-										<td>@mdo</td>
-										<td>Mark</td>
-										<td>Otto</td>
-										<td>@mdo</td>
-									</tr>
-								</tbody>
-							</table>
+							<c:if test="${not empty model.getKey()}">
+								<table class="table table-dark table-hover mt-5">
+									<thead>
+										<tr>
+											<th scope="col">ID</th>
+											<th scope="col">Cne</th>
+											<th scope="col">Nom</th>
+											<th scope="col">Prenom</th>
+											<th scope="col">Departement</th>
+											<th scope="col">Filiere</th>
+											<th scope="col">Telephone</th>
+										</tr>
+									</thead>
+									<tbody class="table-group-divider">
+										<c:forEach items="${model.getListEtudiant()}" var="message">
+											<tr class="text-center">
+												<td>${message.getId() }</td>
+												<td>${message.getCne()}</td>
+												<td>${message.getNom()}</td>
+												<td>${message.getPrenom()}</td>
+												<td>${message.getDepartement()}</td>
+												<td>${message.getFiliere()}</td>
+												<td>${message.getTelephone()}</td>
+											</tr>
+										</c:forEach>
+									</tbody>
+								</table>
+							</c:if>
 						</div>
 					</div>
 				</div>

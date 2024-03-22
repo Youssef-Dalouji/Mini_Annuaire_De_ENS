@@ -8,6 +8,7 @@ public class EtudiantModel {
 
 	private String key;
 	private List<Etudiant> listEtudiant;
+	Etudiant etudiant;
 	public String getKey() {
 		return key;
 	}
@@ -20,7 +21,12 @@ public class EtudiantModel {
 	public void setListEtudiant(List<Etudiant> listEtudiant) {
 		this.listEtudiant = listEtudiant;
 	}
-	
+	public Etudiant getEtudiant() {
+		return etudiant;
+	}
+	public void setEtudiant(Etudiant etu) {
+		this.etudiant = etu;
+	}
 	
 	
 }

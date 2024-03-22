@@ -8,6 +8,8 @@ public class FiliereModel {
 
 	private String key;
 	private List<Filiere> listFiliere;
+	private Filiere filiere;
+	
 	public String getKey() {
 		return key;
 	}
@@ -19,6 +21,12 @@ public class FiliereModel {
 	}
 	public void setListFiliere(List<Filiere> listFiliere) {
 		this.listFiliere = listFiliere;
+	}
+	public Filiere getFiliere() {
+		return filiere;
+	}
+	public void setFiliere(Filiere filiere) {
+		this.filiere = filiere;
 	}
 	
 	

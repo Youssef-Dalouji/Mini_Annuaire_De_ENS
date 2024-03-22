@@ -19,23 +19,22 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-8">
 				<a class="btn btn-success" href="InsertDepart.html" role="button">Insérer</a>
+				<a class="btn btn-light ml-3" href="SearchDepart.html" role="button">Chercher</a>
 					<table class="table caption-top my-2">
 					<caption>Liste des départements</caption>
 						<thead class="table-dark">
-							<tr>
+							<tr class="text-center">
 								<th>ID</th>
 								<th>Nom</th>
 							</tr>
 						</thead>
 						<tbody>
-						<%-- <c:forEach items="${model.getTable() }" var="message">
-							<tr>
+						<c:forEach items="${model.getListDeparatement()}" var="message">
+							<tr class="text-center">
 								<td>${message.getId() }</td>
-								<td>${message.getDesignation() }</td>
-								<td>${message.getPrix() }</td>
-								<td>${message.getQuantite() }</td>
+								<td>${message.getNom()}</td>
 							</tr>
-						</c:forEach> --%>
+						</c:forEach>
 						</tbody>
 					</table>
 				</div>

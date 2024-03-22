@@ -6,7 +6,16 @@
 
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" aria-current="page" style="color:white;" href="/Mini_Annuaire_De_ENS/">Home</a>
+        <a class="nav-link" aria-current="page" style="color:white;" href="/Mini_Annuaire_De_ENS/">Accueil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" style="color:white;" href="Etudiants.html">Étudiants</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" style="color:white;" href="Departements.html">Départements</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" style="color:white;" href="Filieres.html">Filières</a>
       </li>
     </ul>
   </div>
